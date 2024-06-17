@@ -124,11 +124,16 @@ function render(timestamp, frame) {
                 earthNFTMesh.matrix.fromArray(pose.transform.matrix);
                 console.log("EarthNFT Image target has been found", earthNFTMesh.position);
             }
+            else{
+              hiroMarkerMesh.visible = false;
+          earthNFTMesh.visible = false;
+            }
         }
         else if (state=="emulated") {
           hiroMarkerMesh.visible = false;
           earthNFTMesh.visible = false;
         }
+        
         
       }
   }
