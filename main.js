@@ -126,7 +126,8 @@ function render(timestamp, frame) {
             }
         }
         else if (state=="emulated") {
-          
+          hiroMarkerMesh.visible = false;
+          earthNFTMesh.visible = false;
         }
         
       }
